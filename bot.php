@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 		$type = $event['type'];
 		
 		$url = "http://110.76.155.50/jrsura/apiline.php?type=$type&userId=$userId&groupId=$groupId&roomId=$roomId&replyToken=$replyToken&text=$text";
-		//$file = file_get_contents($url);
+		$file = file_get_contents($url);
 
 		// Reply only when message sent is in 'text' format
 		
