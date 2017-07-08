@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 				$text2="ไม่เข้าใจคำถาม (".$text.")".":".$userId.":".$groupId.":".$roomId.":".$replyToken.":".$text.":".$type;
 			}
 			
-			replyline($access_token,$replyToken,$url);
+		//	replyline($access_token,$replyToken,$url);
 		}
 	}
 }
