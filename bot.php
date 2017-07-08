@@ -63,7 +63,7 @@ function replyline($access_token,$replyToken,$message) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+			//curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 			$result = curl_exec($ch);
 			curl_close($ch);
 			echo $result . "\r\n";
@@ -89,7 +89,7 @@ function pushline($access_token,$to,$message) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+			//curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 			$result = curl_exec($ch);
 			curl_close($ch);
 			echo $result . "\r\n";
