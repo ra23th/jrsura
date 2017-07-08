@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 		//$file = file_get_contents($url);
 
 		// Reply only when message sent is in 'text' format
-		/*
+		
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {					
 			switch (substr($text,0,3)) 
 			{
@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 			default:
 				$text2="ไม่เข้าใจคำถาม (".$text.")".":".$userId.":".$groupId.":".$roomId.":".$replyToken.":".$text.":".$type;
 			}
-		*/	
+			
 			replyline($access_token,$replyToken,$url);
 		}
 	}
